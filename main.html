@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<title>HTML Assignment 3</title>
-	 <style>
-        /* Center-align the heading */
-        h1 {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        body {
             text-align: center;
         }
-        /* General table styling */
         table {
             border: 1px solid black;
-            border-collapse: collapse;
+            border-spacing: 1px;
+            padding: 1px;
             margin: 20px auto;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 1px;
-            text-align: center;
-        }
-        /* Table classes */
         .middle {
-            margin: 0 auto;
+            border-collapse: collapse;
         }
         .center {
             text-align: center;
@@ -32,113 +25,94 @@
         }
         .green {
             background-color: green;
-            color: white;
         }
         .blue {
             background-color: blue;
-            color: white;
-        }
-        /* Styling for the image cell */
-        #t-image {
-            text-align: center;
         }
     </style>
-	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	 <h1>HTML Assignment #3</h1>
-    
-  
-<table id="table-1" class="middle">
-    <!-- First Row -->
-    <tr>
-        <td id="t11">left</td>
-        <td id="t12">center</td>
-        <td id="t13">right</td>
-    </tr>
-    <!-- Middle Row -->
-    <tr>
-        <td id="t21">left</td>
-        <td id="t22" class="center">center</td>
-        <td id="t23" class="right">right</td>
-    </tr>
-    <!-- Third Row -->
-    <tr>
-       <td id="t31">left</td>
-        <td id="t32">center</td>
-        <td id="t33">right</td>
-    </tr>
-</table>
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">Row 1, Col 1</td>
+            <td id="t12">Row 1, Col 2</td>
+            <td id="t13">Row 1, Col 3</td>
+        </tr>
+        <tr>
+            <td class="center">Row 2, Col 1</td>
+            <td class="center">Row 2, Col 2</td>
+            <td class="center">Row 2, Col 3</td>
+        </tr>
+        <tr>
+            <td class="right">Row 3, Col 1</td>
+            <td class="right">Row 3, Col 2</td>
+            <td class="right">Row 3, Col 3</td>
+        </tr>
+    </table>
 
     <!-- Table 2 -->
     <table id="table-2" class="middle">
-        
-        <tbody>
-            <!-- Additional rows for Table 2 -->
-            <tr>
-                <td id="t221">Row 2, Cell 1</td>
-                <td id="t222">Row 2, Cell 2</td>
-                <td id="t223">Row 2, Cell 3</td>
-                <td id="t224">Row 2, Cell 4</td>
-                <td id="t225">Row 2, Cell 5</td>
-                <td id="t226">Row 2, Cell 6</td>
-            </tr>
-            <tr>
-                <td id="t231">Row 3, Cell 1</td>
-                <td id="t232">Row 3, Cell 2</td>
-                <td id="t233">Row 3, Cell 3</td>
-                <td id="t234">Row 3, Cell 4</td>
-                <td id="t235">Row 3, Cell 5</td>
-                <td id="t236">Row 3, Cell 6</td>
-            </tr>
-            <tr>
-                <td id="t241">Row 4, Cell 1</td>
-                <td id="t242">Row 4, Cell 2</td>
-                <td id="t243">Row 4, Cell 3</td>
-                <td id="t244">Row 4, Cell 4</td>
-                <td id="t245">Row 4, Cell 5</td>
-                <td id="t246">Row 4, Cell 6</td>
-            </tr>
-            <tr>
-                <td id="t251">Row 5, Cell 1</td>
-                <td id="t252">Row 5, Cell 2</td>
-                <td id="t253">Row 5, Cell 3</td>
-                <td id="t254">Row 5, Cell 4</td>
-                <td id="t255">Row 5, Cell 5</td>
-                <td id="t256">Row 5, Cell 6</td>
-            </tr>
-            <tr>
-                <td id="t261">Row 6, Cell 1</td>
-                <td id="t262">Row 6, Cell 2</td>
-                <td id="t263">Row 6, Cell 3</td>
-                <td id="t264">Row 6, Cell 4</td>
-                <td id="t265">Row 6, Cell 5</td>
-                <td id="t266">Row 6, Cell 6</td>
-            </tr>
-        </tbody>
+        <tr>
+            <td id="t21" colspan="6">This is a single cell spanning 6 columns</td>
+        </tr>
+        <tr>
+            <td>Row 2, Col 1</td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+            <td>Row 2, Col 4</td>
+            <td>Row 2, Col 5</td>
+            <td>Row 2, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 3, Col 1</td>
+            <td>Row 3, Col 2</td>
+            <td>Row 3, Col 3</td>
+            <td>Row 3, Col 4</td>
+            <td>Row 3, Col 5</td>
+            <td>Row 3, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 4, Col 1</td>
+            <td>Row 4, Col 2</td>
+            <td>Row 4, Col 3</td>
+            <td>Row 4, Col 4</td>
+            <td>Row 4, Col 5</td>
+            <td>Row 4, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 5, Col 1</td>
+            <td>Row 5, Col 2</td>
+            <td>Row 5, Col 3</td>
+            <td>Row 5, Col 4</td>
+            <td>Row 5, Col 5</td>
+            <td>Row 5, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 6, Col 1</td>
+            <td>Row 6, Col 2</td>
+            <td>Row 6, Col 3</td>
+            <td>Row 6, Col 4</td>
+            <td>Row 6, Col 5</td>
+            <td>Row 6, Col 6</td>
+        </tr>
     </table>
 
     <!-- Table 3 -->
     <table id="table-3" class="middle">
-        <thead>
-            <tr class="green">
-                <th id="t311" colspan="3"></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="t321" colspan="3">
-                    <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image">
-                </td>
-            </tr>
-          
-            <tr class="blue">
-                 <th id="t311" colspan="3"></th>
-            </tr>
-        </tbody>
+        <tr class="green">
+            <td>Row 1: Background Green</td>
+        </tr>
+        <tr>
+            <td id="t-image"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Description of image" /></td>
+        </tr>
+        <tr class="blue">
+            <td>Row 3: Background Blue</td>
+        </tr>
     </table>
-</body>
 
+</body>
 </html>
