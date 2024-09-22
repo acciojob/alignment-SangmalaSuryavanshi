@@ -7,13 +7,17 @@
     <style>
         body {
             text-align: center;
-        }
-        table {
-            border: 1px solid black;
-            border-spacing: 1px;
-            padding: 1px;
-            margin: 20px auto;
-        }
+       table {
+	    border: 1px solid black;
+	    border-spacing: 1px;
+	    margin: 20px auto;
+	    border-collapse: collapse; /* Ensure no double borders */
+		}
+
+		td {
+		    border: 1px solid black; /* Explicitly set border on td */
+		    padding: 1px;
+		}
         .middle {
             border-collapse: collapse;
         }
